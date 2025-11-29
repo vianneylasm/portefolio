@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jean-Marie Vianney Lasm – Portfolio Analyste SOC</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="lang-fr">
+
+  <!-- ===== HEADER / PAGE D’ACCUEIL ===== -->
+  <section class="hero" id="home">
+    <div class="lang-switch">
+      <button onclick="toggleLang()">FR | EN</button>
+    </div>
+
+    <div class="hero-content">
+      <img src="WhatsApp Image 2025-10-13 at 03.11.19.jpeg" alt="Jean-Marie Vianney Lasm" class="profile-img">
+
+      <h1 data-lang="fr">Jean-Marie Vianney Lasm</h1>
+      <h1 data-lang="en">Jean-Marie Vianney Lasm</h1>
+
+      <p id="animated-text" data-lang="fr"></p>
+      <p id="animated-text-en" data-lang="en"></p>
+
+      <div class="social-links">
+        <a href="https://github.com/vianneylasm"      target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/vianney-lasm-40b771323" target="_blank">LinkedIn</a>
+        <a href="mailto:vianneylasm@icloud.com">Mail</a>
+      </div>
+
+      <a href="#portfolio" class="see-more" data-lang="fr">Voir plus ↓</a>
+      <a href="#portfolio" class="see-more" data-lang="en">See more ↓</a>
+    </div>
+  </section>
+
+  <!-- ===== SECTION PRINCIPALE ===== -->
+  <main id="portfolio">
+    <section id="network and system">
+      <h2 data-lang="fr">Administration Réseau et système</h2>
+      <h2 data-lang="en">Network and system administrator</h2>
+      <p data-lang="fr">Configuration des équipements réseau et gestion des accès et mise en oeuvres d'une politique de sécurité.</p>
+      <p data-lang="en">Network equipment configuration, access management, and implementation of a security policy.</p>
+    </section>
+    <section id="network">
+      <h2 data-lang="fr">Analyse Réseau</h2>
+      <h2 data-lang="en">Network Analysis</h2>
+      <p data-lang="fr">Analyses avec Wireshark et Nmap, détection de menaces et création de rapports techniques.</p>
+      <p data-lang="en">Analysis with Wireshark and Nmap, threat detection, and technical reporting.</p>
+    </section>
+
+    <section id="logs">
+      <h2 data-lang="fr">Analyse des Logs</h2>
+      <h2 data-lang="en">Log Analysis</h2>
+      <p data-lang="fr">Étude des logs Linux/Windows, détection d’intrusions et activités suspectes.</p>
+      <p data-lang="en">Review of Linux/Windows logs, intrusion detection, and suspicious activity monitoring.</p>
+    </section>
+
+    <section id="cloud">
+      <h2 data-lang="fr">Sécurité Cloud</h2>
+      <h2 data-lang="en">Cloud Security</h2>
+      <p data-lang="fr">Configuration IAM, MFA, et politique de sécurité sur AWS & Azure.</p>
+      <p data-lang="en">IAM setup, MFA enforcement, and cloud security policy management on AWS & Azure.</p>
+    </section>
+
+    <section id="automation">
+      <h2 data-lang="fr">SOC Automation avec Python + IA</h2>
+      <h2 data-lang="en">SOC Automation with Python + AI</h2>
+      <p data-lang="fr">Scripts Python pour automatiser les alertes SOC, détection d’anomalies avec IA.</p>
+      <p data-lang="en">Python scripts for SOC alert automation and anomaly detection using AI.</p>
+    </section>
+
+    <section id="certification">
+      <h2 data-lang="fr">Mes Certifications</h2>
+      <h2 data-lang="en">My Certifications</h2>
+      <ul>
+        <li data-lang="fr">Cisco Ethical Hacker</li>
+        <li data-lang="en">Cisco Ethical Hacker</li>
+        <li data-lang="fr">Analyste Cybersécurité Junior</li>
+        <li data-lang="en">Junior Cybersecurity Analyst</li>
+        <li data-lang="fr">ANSSI Cybersécurité</li>
+        <li data-lang="en">ANSSI Cybersecurity</li>
+        <li data-lang="fr">Cisco Network Defense</li>
+        <li data-lang="en">Cisco Network Defense</li>
+        <li data-lang="fr">Cyber Threat Management</li>
+        <li data-lang="en">Cyber Threat Management</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2 data-lang="fr">Me Contacter</h2>
+      <h2 data-lang="en">Contact Me</h2>
+      <p>Email : <a href="mailto:vianneylasm@icloud.com">vianneylasm@icloud.com</a></p>
+      <p>LinkedIn : <a href="https://linkedin.com/in/vianneylasm">linkedin.com/in/vianneylasm</a></p>
+      <p>GitHub : <a href="https://github.com/vianneylasm">github.com/vianneylasm</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p data-lang="fr">©️ 2025 Jean-Marie Lasm. Tous droits réservés.</p>
+    <p data-lang="en">©️ 2025 Jean-Marie Lasm. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Changement de langue
+    function toggleLang() {
+      document.body.classList.toggle('lang-en');
+      document.body.classList.toggle('lang-fr');
+    }
+
+    // Texte animé
+    const textesFR = ["Analyste SOC Junior", "Spécialiste en Sécurité Cloud", "Passionné d’IA et d’Automatisation"];
+    const textesEN = ["Junior SOC Analyst", "Cloud Security Specialist", "AI & Automation Enthusiast"];
+    let index = 0;
+    let charIndex = 0;
+    let currentTextFR = "";
+    let currentTextEN = "";
+    const speed = 100;
+
+    function typeText() {
+      const fr = document.getElementById("animated-text");
+      const en = document.getElementById("animated-text-en");
+
+      if (charIndex < textesFR[index].length) {
+        currentTextFR += textesFR[index].charAt(charIndex);
+        currentTextEN += textesEN[index].charAt(charIndex);
+        fr.textContent = currentTextFR;
+        en.textContent = currentTextEN;
+        charIndex++;
+        setTimeout(typeText, speed);
+      } else {
+        setTimeout(eraseText, 2000);
+      }
+    }
+
+    function eraseText() {
+      const fr = document.getElementById("animated-text");
+      const en = document.getElementById("animated-text-en");
+
+      if (charIndex > 0) {
+        currentTextFR = currentTextFR.slice(0, -1);
+        currentTextEN = currentTextEN.slice(0, -1);
+        fr.textContent = currentTextFR;
+        en.textContent = currentTextEN;
+        charIndex--;
+        setTimeout(eraseText, 50);
+      } else {
+        index = (index + 1) % textesFR.length;
+        setTimeout(typeText, 200);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", typeText);
+  </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #020024, #090979, #b300ff);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  scroll-behavior: smooth;
+}
+
+/* Animation du fond */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Section d’accueil */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00bcd4;
+  margin-bottom: 1.5rem;
+}
+
+.lang-switch {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.lang-switch button {
+  background-color: #00bcd4;
+  color: #111;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.social-links a {
+  margin: 0 1rem;
+  color: #00bcd4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: white;
+}
+
+.see-more {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 1.6rem;
+  border: 2px solid #00bcd4;
+  border-radius: 25px;
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.see-more:hover {
+  background-color: #00bcd4;
+  color: #111;
+}
+
+/* Sections suivantes */
+section {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgba(0,0,0,0.4);
+}
+
+[data-lang="en"] {
+  display: none;
+}
+
+body.lang-en [data-lang="fr"] {
+  display: none;
+}
+
+body.lang-en [data-lang="en"] {
+  display: block;
+}
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  border: 4px solid transparent;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.8),
+              0 0 40px rgba(179, 0, 255, 0.6),
+              0 0 80px rgba(0, 188, 212, 0.4);
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Effet d’aura lumineuse qui bouge */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.8),
+                0 0 40px rgba(179, 0, 255, 0.6),
+                0 0 80px rgba(0, 188, 212, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(0, 188, 212, 1),
+                0 0 70px rgba(179, 0, 255, 0.8),
+                0 0 120px rgba(0, 188, 212, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.8),
+                0 0 40px rgba(179, 0, 255, 0.6),
+                0 0 80px rgba(0, 188, 212, 0.4);
+  }
+}
