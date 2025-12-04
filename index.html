@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jean-Marie Vianney Lasm – Portfolio Analyste SOC</title>
-  <link rel="stylesheet" href="index.css">
+  <title>Jean-Marie Vianney Lasm    – Portfolio Analyste SOC</title>   
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="lang-fr">
 
-  <!-- ===== HEADER / PAGE D’ACCUEIL ===== -->
+  <!-- ===== HEADER / PAGE D'ACCUEIL ===== -->
   <section class="hero" id="home">
     <div class="lang-switch">
       <button onclick="toggleLang()">FR | EN</button>
@@ -24,7 +24,7 @@
       <p id="animated-text-en" data-lang="en"></p>
 
       <div class="social-links">
-        <a href="https://github.com/vianneylasm"      target="_blank">GitHub</a>
+        <a href="https://github.com/vianneylasm" target="_blank">GitHub</a>
         <a href="https://linkedin.com/in/vianney-lasm-40b771323" target="_blank">LinkedIn</a>
         <a href="mailto:vianneylasm@icloud.com">Mail</a>
       </div>
@@ -36,12 +36,13 @@
 
   <!-- ===== SECTION PRINCIPALE ===== -->
   <main id="portfolio">
-    <section id="network and system">
+    <section id="network-and-system">
       <h2 data-lang="fr">Administration Réseau et système</h2>
-      <h2 data-lang="en">Network and system administrator</h2>
+      <h2 data-lang="en">Network and System Administrator</h2>
       <p data-lang="fr">Configuration des équipements réseau et gestion des accès et mise en oeuvres d'une politique de sécurité.</p>
       <p data-lang="en">Network equipment configuration, access management, and implementation of a security policy.</p>
     </section>
+
     <section id="network">
       <h2 data-lang="fr">Analyse Réseau</h2>
       <h2 data-lang="en">Network Analysis</h2>
@@ -52,7 +53,7 @@
     <section id="logs">
       <h2 data-lang="fr">Analyse des Logs</h2>
       <h2 data-lang="en">Log Analysis</h2>
-      <p data-lang="fr">Étude des logs Linux/Windows, détection d’intrusions et activités suspectes.</p>
+      <p data-lang="fr">Étude des logs Linux/Windows, détection d'intrusions et activités suspectes.</p>
       <p data-lang="en">Review of Linux/Windows logs, intrusion detection, and suspicious activity monitoring.</p>
     </section>
 
@@ -66,8 +67,105 @@
     <section id="automation">
       <h2 data-lang="fr">SOC Automation avec Python + IA</h2>
       <h2 data-lang="en">SOC Automation with Python + AI</h2>
-      <p data-lang="fr">Scripts Python pour automatiser les alertes SOC, détection d’anomalies avec IA.</p>
+      <p data-lang="fr">Scripts Python pour automatiser les alertes SOC, détection d'anomalies avec IA.</p>
       <p data-lang="en">Python scripts for SOC alert automation and anomaly detection using AI.</p>
+    </section>
+
+    <section id="skills">
+      <h2 data-lang="fr">Compétences Techniques</h2>
+      <h2 data-lang="en">Technical Skills</h2>
+      <div class="skills-container">
+        <div class="skill-item">
+          <div class="skill-header">
+            <span data-lang="fr">Analyse Réseau</span>
+            <span data-lang="en">Network Analysis</span>
+            <span class="skill-percent">0%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-target="92"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span data-lang="fr">Sécurité Cloud</span>
+            <span data-lang="en">Cloud Security</span>
+            <span class="skill-percent">0%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-target="88"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span data-lang="fr">Python & Automation</span>
+            <span data-lang="en">Python & Automation</span>
+            <span class="skill-percent">0%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-target="85"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span data-lang="fr">Analyse des Logs</span>
+            <span data-lang="en">Log Analysis</span>
+            <span class="skill-percent">0%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-target="90"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span data-lang="fr">Administration Système</span>
+            <span data-lang="en">System Administration</span>
+            <span class="skill-percent">0%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-target="87"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="terminal-section">
+      <h2 data-lang="fr">Terminal Interactif</h2>
+      <h2 data-lang="en">Interactive Terminal</h2>
+      <div class="terminal-container">
+        <div class="terminal-header">
+          <div class="terminal-buttons">
+            <span class="btn-close"></span>
+            <span class="btn-minimize"></span>
+            <span class="btn-maximize"></span>
+          </div>
+          <span class="terminal-title">vianneylasm@soc-analyst:~$</span>
+        </div>
+        <div class="terminal-body" id="terminal-output">
+          <div class="terminal-line">
+            <span class="prompt">vianneylasm@soc-analyst:~$</span> <span class="command-text">whoami</span>
+          </div>
+          <div class="terminal-response">Jean-Marie Vianney Lasm - Junior SOC Analyst</div>
+          <div class="terminal-line">
+            <span class="prompt">vianneylasm@soc-analyst:~$</span> <span class="command-text">cat skills.txt</span>
+          </div>
+          <div class="terminal-response">
+            → Network Analysis<br>
+            → Cloud Security (AWS/Azure)<br>
+            → Python Automation<br>
+            → Log Analysis<br>
+            → System Administration
+          </div>
+          <div class="terminal-line">
+            <span class="prompt">vianneylasm@soc-analyst:~$</span> <span class="cursor-blink">_</span>
+          </div>
+        </div>
+        <div class="terminal-input-line">
+          <span class="prompt">vianneylasm@soc-analyst:~$</span>
+          <input type="text" id="terminal-input" placeholder="Type 'help' for commands..." autocomplete="off">
+        </div>
+      </div>
+      <p class="terminal-hint" data-lang="fr">💡 Essayez: help, about, skills, contact, clear</p>
+      <p class="terminal-hint" data-lang="en">💡 Try: help, about, skills, contact, clear</p>
     </section>
 
     <section id="certification">
@@ -77,14 +175,49 @@
         <li data-lang="fr">Hacker Ethique Cisco</li>
         <li data-lang="en">Cisco Ethical Hacker</li>
         <li data-lang="fr">Cisco Parcours de Carrière D'analyste Junior En Cybersécurité</li>
-        <li data-lang="en">Cisco Junior Cybersecurity Analyst career path</li>
+        <li data-lang="en">Cisco Junior Cybersecurity Analyst Career Path</li>
         <li data-lang="fr">ANSSI Cybersécurité</li>
         <li data-lang="en">ANSSI Cybersecurity</li>
-        <li data-lang="fr">Cisco Network Technician career path</li>
-        <li data-lang="en">Cisco Parcours de carrière de technicien réseau</li>
-        <li data-lang="fr">Cisco Appliquer AI : Analyser les avis clients</li>
-        <li data-lang="en">Cisco Apply AI:Analyse customer reviews</li>
+        <li data-lang="fr">Cisco Network Technician Career Path</li>
+        <li data-lang="en">Cisco Network Technician Career Path</li>
+        <li data-lang="fr">Cisco Appliquer AI : Analyser les avis clients</li>
+        <li data-lang="en">Cisco Apply AI: Analyse Customer Reviews</li>
       </ul>
+    </section>
+
+    <section id="skills-diagram">
+      <h2 data-lang="fr">Diagramme de Compétences</h2>
+      <h2 data-lang="en">Skills Diagram</h2>
+      <div class="diagram-container">
+        <canvas id="skillsChart"></canvas>
+      </div>
+      <div class="skills-legend">
+        <div class="legend-item">
+          <span class="legend-color" style="background: #00bcd4;"></span>
+          <span data-lang="fr">Analyse Réseau</span>
+          <span data-lang="en">Network Analysis</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-color" style="background: #b300ff;"></span>
+          <span data-lang="fr">Sécurité Cloud</span>
+          <span data-lang="en">Cloud Security</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-color" style="background: #ff6b6b;"></span>
+          <span data-lang="fr">Python & IA</span>
+          <span data-lang="en">Python & AI</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-color" style="background: #4ecdc4;"></span>
+          <span data-lang="fr">Analyse Logs</span>
+          <span data-lang="en">Log Analysis</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-color" style="background: #ffe66d;"></span>
+          <span data-lang="fr">Admin Système</span>
+          <span data-lang="en">System Admin</span>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
@@ -109,7 +242,7 @@
     }
 
     // Texte animé
-    const textesFR = ["Analyste SOC Junior", "Spécialiste en Sécurité Cloud", "Passionné d’IA et d’Automatisation"];
+    const textesFR = ["Analyste SOC Junior", "Spécialiste en Sécurité Cloud", "Passionné d'IA et d'Automatisation"];
     const textesEN = ["Junior SOC Analyst", "Cloud Security Specialist", "AI & Automation Enthusiast"];
     let index = 0;
     let charIndex = 0;
@@ -151,7 +284,297 @@
     }
 
     document.addEventListener("DOMContentLoaded", typeText);
+
+    // === ANIMATION DES COMPÉTENCES ===
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: "0px"
+    };
+
+    const skillsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const skillBars = entry.target.querySelectorAll('.skill-progress');
+          skillBars.forEach(bar => {
+            const target = parseInt(bar.getAttribute('data-target'));
+            animateSkill(bar, target);
+          });
+          skillsObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    function animateSkill(element, target) {
+      let current = 0;
+      const increment = target / 100;
+      const skillPercent = element.closest('.skill-item').querySelector('.skill-percent');
+      
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        element.style.width = current + '%';
+        skillPercent.textContent = Math.floor(current) + '%';
+      }, 20);
+    }
+
+    const skillsSection = document.getElementById('skills');
+    if (skillsSection) {
+      skillsObserver.observe(skillsSection);
+    }
+
+    // === TERMINAL INTERACTIF ===
+    const terminalInput = document.getElementById('terminal-input');
+    const terminalOutput = document.getElementById('terminal-output');
+
+    const commands = {
+      help: {
+        fr: `Commandes disponibles:
+  → help     : Affiche cette aide
+  → about    : À propos de moi
+  → skills   : Liste mes compétences
+  → contact  : Mes coordonnées
+  → clear    : Efface le terminal`,
+        en: `Available commands:
+  → help     : Show this help
+  → about    : About me
+  → skills   : List my skills
+  → contact  : My contact info
+  → clear    : Clear terminal`
+      },
+      about: {
+        fr: `Junior SOC Analyst passionné par la cybersécurité et l'automatisation.
+Spécialisé en analyse réseau, sécurité cloud et détection d'intrusions.`,
+        en: `Junior SOC Analyst passionate about cybersecurity and automation.
+Specialized in network analysis, cloud security and intrusion detection.`
+      },
+      skills: {
+        fr: `Compétences techniques:
+  ✓ Analyse Réseau (Wireshark, Nmap)
+  ✓ Sécurité Cloud (AWS, Azure)
+  ✓ Python & Automatisation
+  ✓ Analyse des Logs (Linux/Windows)
+  ✓ Administration Système`,
+        en: `Technical skills:
+  ✓ Network Analysis (Wireshark, Nmap)
+  ✓ Cloud Security (AWS, Azure)
+  ✓ Python & Automation
+  ✓ Log Analysis (Linux/Windows)
+  ✓ System Administration`
+      },
+      contact: {
+        fr: `📧 Email: vianneylasm@icloud.com
+🔗 LinkedIn: linkedin.com/in/vianney-lasm-40b771323
+💻 GitHub: github.com/vianneylasm`,
+        en: `📧 Email: vianneylasm@icloud.com
+🔗 LinkedIn: linkedin.com/in/vianney-lasm-40b771323
+💻 GitHub: github.com/vianneylasm`
+      }
+    };
+
+    terminalInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        const cmd = this.value.trim().toLowerCase();
+        const lang = document.body.classList.contains('lang-en') ? 'en' : 'fr';
+        
+        // Afficher la commande
+        const cmdLine = document.createElement('div');
+        cmdLine.className = 'terminal-line';
+        cmdLine.innerHTML = `<span class="prompt">vianneylasm@soc-analyst:~$</span> ${this.value}`;
+        
+        // Retirer le curseur clignotant temporairement
+        const cursorLine = terminalOutput.querySelector('.cursor-blink');
+        if (cursorLine) {
+          cursorLine.parentElement.remove();
+        }
+        
+        terminalOutput.appendChild(cmdLine);
+
+        // Traiter la commande
+        if (cmd === 'clear') {
+          terminalOutput.innerHTML = '';
+        } else if (commands[cmd]) {
+          const response = document.createElement('div');
+          response.className = 'terminal-response';
+          response.innerHTML = commands[cmd][lang].replace(/\n/g, '<br>');
+          terminalOutput.appendChild(response);
+        } else if (cmd !== '') {
+          const error = document.createElement('div');
+          error.className = 'terminal-response';
+          error.style.color = '#ff6b6b';
+          error.textContent = lang === 'fr' 
+            ? `Commande non trouvée: ${cmd}. Tapez 'help' pour l'aide.`
+            : `Command not found: ${cmd}. Type 'help' for assistance.`;
+          terminalOutput.appendChild(error);
+        }
+
+        // Ajouter le curseur à la fin
+        const newCursorLine = document.createElement('div');
+        newCursorLine.className = 'terminal-line';
+        newCursorLine.innerHTML = '<span class="prompt">vianneylasm@soc-analyst:~$</span> <span class="cursor-blink">_</span>';
+        terminalOutput.appendChild(newCursorLine);
+
+        // Scroller vers le bas
+        terminalOutput.scrollTop = terminalOutput.scrollHeight;
+        
+        this.value = '';
+      }
+    });
+
+    // === DIAGRAMME RADAR DES COMPÉTENCES ===
+    const diagramObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          createSkillsChart();
+          diagramObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    const diagramSection = document.getElementById('skills-diagram');
+    if (diagramSection) {
+      diagramObserver.observe(diagramSection);
+    }
+
+    function createSkillsChart() {
+      const canvas = document.getElementById('skillsChart');
+      const ctx = canvas.getContext('2d');
+      
+      // Configuration responsive
+      const size = Math.min(500, window.innerWidth - 100);
+      canvas.width = size;
+      canvas.height = size;
+      
+      const centerX = size / 2;
+      const centerY = size / 2;
+      const maxRadius = size / 2 - 50;
+      
+      const skills = [
+        { name: 'Network Analysis', value: 0, target: 92, color: '#00bcd4' },
+        { name: 'Cloud Security', value: 0, target: 88, color: '#b300ff' },
+        { name: 'Python & AI', value: 0, target: 85, color: '#ff6b6b' },
+        { name: 'Log Analysis', value: 0, target: 90, color: '#4ecdc4' },
+        { name: 'System Admin', value: 0, target: 87, color: '#ffe66d' }
+      ];
+      
+      function drawGrid() {
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+        ctx.lineWidth = 1;
+        
+        // Cercles concentriques
+        for (let i = 1; i <= 5; i++) {
+          ctx.beginPath();
+          ctx.arc(centerX, centerY, (maxRadius / 5) * i, 0, Math.PI * 2);
+          ctx.stroke();
+        }
+        
+        // Lignes radiales
+        const angleStep = (Math.PI * 2) / skills.length;
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+        
+        for (let i = 0; i < skills.length; i++) {
+          const angle = i * angleStep - Math.PI / 2;
+          ctx.beginPath();
+          ctx.moveTo(centerX, centerY);
+          ctx.lineTo(
+            centerX + Math.cos(angle) * maxRadius,
+            centerY + Math.sin(angle) * maxRadius
+          );
+          ctx.stroke();
+        }
+        
+        // Labels de pourcentage
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+        ctx.font = '12px Arial';
+        ctx.textAlign = 'center';
+        for (let i = 1; i <= 5; i++) {
+          ctx.fillText(`${i * 20}%`, centerX, centerY - (maxRadius / 5) * i + 5);
+        }
+      }
+      
+      function drawSkills() {
+        const angleStep = (Math.PI * 2) / skills.length;
+        
+        // Dessiner le polygone
+        ctx.beginPath();
+        skills.forEach((skill, i) => {
+          const angle = i * angleStep - Math.PI / 2;
+          const radius = (skill.value / 100) * maxRadius;
+          const x = centerX + Math.cos(angle) * radius;
+          const y = centerY + Math.sin(angle) * radius;
+          
+          if (i === 0) {
+            ctx.moveTo(x, y);
+          } else {
+            ctx.lineTo(x, y);
+          }
+        });
+        ctx.closePath();
+        
+        // Remplissage avec gradient
+        const gradient = ctx.createRadialGradient(centerX, centerY, 0, centerX, centerY, maxRadius);
+        gradient.addColorStop(0, 'rgba(0, 188, 212, 0.3)');
+        gradient.addColorStop(1, 'rgba(179, 0, 255, 0.3)');
+        ctx.fillStyle = gradient;
+        ctx.fill();
+        
+        // Bordure
+        ctx.strokeStyle = '#00bcd4';
+        ctx.lineWidth = 3;
+        ctx.stroke();
+        
+        // Points sur chaque compétence
+        skills.forEach((skill, i) => {
+          const angle = i * angleStep - Math.PI / 2;
+          const radius = (skill.value / 100) * maxRadius;
+          const x = centerX + Math.cos(angle) * radius;
+          const y = centerY + Math.sin(angle) * radius;
+          
+          // Point
+          ctx.beginPath();
+          ctx.arc(x, y, 6, 0, Math.PI * 2);
+          ctx.fillStyle = skill.color;
+          ctx.fill();
+          ctx.strokeStyle = 'white';
+          ctx.lineWidth = 2;
+          ctx.stroke();
+          
+          // Étiquette
+          const labelRadius = maxRadius + 30;
+          const labelX = centerX + Math.cos(angle) * labelRadius;
+          const labelY = centerY + Math.sin(angle) * labelRadius;
+          
+          ctx.fillStyle = 'white';
+          ctx.font = 'bold 13px Arial';
+          ctx.textAlign = 'center';
+          ctx.fillText(`${Math.floor(skill.value)}%`, labelX, labelY);
+        });
+      }
+      
+      function animate() {
+        let allComplete = true;
+        
+        skills.forEach(skill => {
+          if (skill.value < skill.target) {
+            skill.value += skill.target / 60; // Animation sur ~1 seconde
+            if (skill.value > skill.target) skill.value = skill.target;
+            allComplete = false;
+          }
+        });
+        
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawGrid();
+        drawSkills();
+        
+        if (!allComplete) {
+          requestAnimationFrame(animate);
+        }
+      }
+      
+      animate();
+    }
   </script>
 </body>
-
 </html>
